@@ -18,6 +18,7 @@
   "homepage": "https://github.com/SuchkovaTanya/repair-design#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-scss": "^1.4.0",
     "sass": "^1.26.2"
