@@ -328,10 +328,16 @@ template {
     color: #ffffff; }
 
 .container {
-  max-width: 1256px;
+  /*display: flex*/
+  max-width: 1200px;
   margin: auto; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0; }
 
@@ -358,6 +364,7 @@ template {
 
 .hero {
   position: relative;
+  padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
@@ -367,6 +374,19 @@ template {
     height: 100%;
     left: 0;
     top: 0; }
+  .hero__scroll-down {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    min-width: 247px;
+    min-height: 97px;
+    background-color: #131313;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none; }
 
 .instagram {
   display: flex;
@@ -381,6 +401,9 @@ template {
 
 .title {
   margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
 
 body {
   font-family: 'Futura Book', sans-serif;
