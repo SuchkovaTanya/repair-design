@@ -319,11 +319,11 @@ template {
   display: none; }
 
 .button {
-  padding: 13px 20px;
+  padding: 13px 27px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0.94rem; }
+  font-size: 1.22rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -339,8 +339,8 @@ template {
     color: #ffffff; }
 
 .container {
-  width: 85%;
-  max-width: 1260px;
+  width: 91%;
+  max-width: 1600px;
   margin: auto; }
 
 *, *:before, *:after {
@@ -370,6 +370,130 @@ body {
       background-color: #E3B873;
       margin: 0 10px;
       border-radius: 30px; }
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #131313;
+  padding: 24px 0; }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  color: #E3B873;
+  text-transform: uppercase;
+  font-size: 1.42rem; }
+
+.nav__item {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.32rem;
+  margin-right: 2.857rem;
+  transition: 0.2s; }
+  .nav__item:hover {
+    color: #E3B873; }
+
+.phone {
+  color: #E3B873;
+  font-size: 1.32rem; }
+
+.contacts__phone {
+  margin-right: 3.214rem;
+  font-size: 1.32rem; }
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #ffffff; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
+  .hero__content {
+    position: relative;
+    max-width: 47.857rem;
+    margin-left: 4.28rem; }
+  .hero__text {
+    font-size: 1.671rem;
+    max-width: 35.714rem;
+    line-height: 1.7; }
+  .hero__button {
+    margin-right: 1.429rem;
+    width: 18.6rem;
+    height: 4.5rem; }
+  .hero__instagram {
+    position: absolute;
+    max-width: 5.714rem;
+    height: 100%;
+    left: 0;
+    top: 0; }
+  .hero__scroll-down {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    min-width: 17.643rem;
+    min-height: 6.929rem;
+    background-color: #131313;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    color: #ffffff;
+    text-decoration: none; }
+    .hero__scroll-down::after {
+      content: '';
+      background: url("../img/arrow-down.svg") no-repeat center;
+      width: 35px;
+      height: 35px;
+      border: 2px solid #E3B873;
+      border-radius: 50%;
+      margin-left: 12px; }
+
+.instagram {
+  display: flex;
+  background-color: #131313;
+  justify-content: center;
+  align-items: center; }
+  .instagram__link {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #E3B873;
+    text-decoration: none;
+    transform: rotate(90deg); }
+    .instagram__link::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 8px; }
+
+.title {
+  margin: 0;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  line-height: 1.45; }
+  .title--primary {
+    color: #E3B873; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -409,118 +533,3 @@ body {
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
     display: none; } }
-
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  background-color: #131313;
-  padding: 24px 0; }
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.logo {
-  color: #E3B873;
-  text-transform: uppercase; }
-
-.nav__item {
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-right: 2.857rem;
-  transition: 0.2s; }
-  .nav__item:hover {
-    color: #E3B873; }
-
-.phone {
-  color: #E3B873; }
-
-.contacts__phone {
-  margin-right: 3.214rem; }
-
-.hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 100px;
-  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
-  height: 100vh;
-  color: #ffffff; }
-  .hero::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(19, 19, 19, 0.7); }
-  .hero__content {
-    position: relative;
-    max-width: 47.857rem;
-    margin-left: 4.28rem; }
-  .hero__text {
-    font-size: 1.571rem;
-    max-width: 35.714rem; }
-  .hero__button {
-    margin-right: 1.429rem; }
-  .hero__instagram {
-    position: absolute;
-    max-width: 5.714rem;
-    height: 100%;
-    left: 0;
-    top: 0; }
-  .hero__scroll-down {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    bottom: 0;
-    min-width: 17.643rem;
-    min-height: 6.929rem;
-    background-color: #131313;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none; }
-    .hero__scroll-down::after {
-      content: '';
-      background: url("../img/arrow-down.svg") no-repeat center;
-      width: 30px;
-      height: 30px;
-      border: 2px solid #E3B873;
-      border-radius: 50%;
-      margin-left: 12px; }
-
-.instagram {
-  display: flex;
-  background-color: #131313;
-  justify-content: center;
-  align-items: center; }
-  .instagram__link {
-    display: flex;
-    align-items: center;
-    line-height: 0.8;
-    text-transform: uppercase;
-    color: #E3B873;
-    text-decoration: none;
-    transform: rotate(90deg); }
-    .instagram__link::after {
-      content: '';
-      width: 50px;
-      height: 1px;
-      background-color: #E3B873;
-      margin-left: 8px; }
-
-.title {
-  margin: 0;
-  font-family: 'Yeseva One', cursive;
-  text-transform: uppercase;
-  font-size: 2.857rem; }
-  .title--primary {
-    color: #E3B873; }
