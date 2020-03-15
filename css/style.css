@@ -541,6 +541,18 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.control {
+  min-height: 100vh;
+  width: 100%;
+  display: table;
+  /*background: url("../video/ocean.jpg")*/ }
+
+.section-title__control {
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+  text-align: center; }
+
 .types__section-title {
   margin-bottom: 3rem; }
 
