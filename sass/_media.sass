@@ -27,29 +27,48 @@
             display: none
 
 @media screen and ( max-width: 750px )
+    .dezign
+        &__fon
+            position: absolute
+            z-index: 0
+            width: 100%
+            height: 400vh
+            background: $dark
+            background-size: 100%
+            margin-top: -10px
+    
     .row
         flex-direction: column
         align-items: center
+        
     .types
         &__card
             margin-bottom: 4.3rem
+            
     .card
         &__text
             margin-left: 0
             margin-bottom: 8rem
+           
     .section-title
         &__heading
-            color: $light
-    .dezign
-        &__fon
-            position: relative
-            width: 100%
-            height: 100%
-            background: $dark 
-            
+            &--dezign
+                position: relative
+                color: $light
+                
+        
     .section-title
         &__text
+            position: relative
             color: $light
+    .section-title
+        &__image
+            position: relative
+    .card
+        &__list
+            margin-bottom: 1rem
+
+            
     
 @media screen and ( max-width: 610px )
     .contacts
