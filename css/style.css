@@ -383,6 +383,17 @@ template {
   max-width: 1600px;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 30%; }
+
+.col-50 {
+  flex-basis: 50%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -398,12 +409,20 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background: #131313 url("../img/bg-lines.svg") center;
+    background-size: 100%;
+    color: #ffffff; }
   .section-title {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
     font-size: 1.1rem;
     line-height: 2.25rem; }
+    .section-title__heading {
+      line-height: 1rem; }
+      .section-title__heading--primary {
+        color: #E3B873; }
     .section-title__image {
       display: flex;
       align-items: center;
@@ -471,6 +490,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3.46rem;
+    background: #131313; }
   .hero__content {
     position: relative;
     max-width: 47.857rem;
@@ -491,6 +519,7 @@ img {
     top: 0; }
   .hero__scroll-down {
     position: absolute;
+    z-index: 130;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -544,25 +573,17 @@ img {
 .control {
   min-height: 100vh;
   width: 100%;
-  display: table;
+  /*display: table*/
   /*background: url("../video/ocean.jpg")*/ }
 
 .section-title__control {
-  display: table-cell;
-  vertical-align: middle;
-  color: #ffffff;
+  /* display: table-cell*/
+  /*vertical-align: middle*/
+  color: #131313;
   text-align: center; }
 
 .types__section-title {
   margin-bottom: 3rem; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
 
 .card__image {
   position: relative;
@@ -573,7 +594,7 @@ img {
 
 .card__text {
   position: relative;
-  max-width: 29.5rem;
+  max-width: 26.5rem;
   margin: 0 auto;
   margin-top: -11.5rem;
   padding: 1.1rem 3.2rem;
@@ -613,9 +634,6 @@ img {
   background-size: 100%;
   margin-top: 300px; }
 
-.section-title__heading {
-  line-height: 1rem; }
-
 .section-title__text {
   display: flex;
   width: 64%;
@@ -629,6 +647,11 @@ img {
   font-size: 1.3rem;
   line-height: 2rem;
   text-transform: none; }
+  .section-title__text--light {
+    color: #ffffff; }
+
+.section-title--left {
+  text-align: left; }
 
 .steps__fon {
   display: flex;

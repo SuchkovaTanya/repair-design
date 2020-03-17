@@ -9,12 +9,22 @@ img
     max-width: 100%
 .section
     padding: 60px 0
+    &--dark
+        background: $dark url('../img/bg-lines.svg') center
+        background-size: 100%
+        color: $light
     &-title
         text-align: center
         text-transform: uppercase
         font-family: 'Yeseva One', cursive
         font-size: 1.1rem
         line-height: 2.25rem
+        &__heading
+            line-height: 1rem
+            &--primary
+                color: $primary
+        
+
         &__image
             display: flex
             align-items: center
