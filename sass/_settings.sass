@@ -18,11 +18,14 @@ img
         text-transform: uppercase
         font-family: 'Yeseva One', cursive
         font-size: 1.1rem
-        line-height: 2.25rem
+        
         &__text
             display: block
             font-family: 'FuturaBookC', cursive
             margin-left: none
+            font-size: 1.29rem
+            line-height: 2.07rem
+            max-width: 33rem
             text-align: left
             text-transform: none
             &--dezign
@@ -38,11 +41,21 @@ img
             &--light
                 color: $light
         &__heading
-            line-height: 1rem
+            line-height: 2.25rem
             &--primary
                 color: $primary
                 text-align: left
-.section-title
+        &__word
+            display: flex
+            align-items: center
+            &::after
+                content: ' '
+                width: 90px
+                height: 2px
+                border-radius: 1px
+                background-color: $primary
+                margin-left: 2rem
+
  
         &__image
             display: flex
