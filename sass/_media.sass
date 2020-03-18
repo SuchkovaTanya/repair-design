@@ -11,6 +11,7 @@
     .hero
         &__button
             font-size: 1.2rem
+        
 @media screen and ( max-width: 1170px )
     html
         font-size: 10px
@@ -19,12 +20,22 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.1rem
+    .swiper
+        &-button
+            &-prev, &-next
+                width: 10%
+                margin-top: 0.2rem
 @media screen and ( max-width: 992px )
     .nav
         display: none
     .hero
         &__instagram
             display: none
+        &::after
+           display: none 
+       
+           
+    
 
 @media screen and ( max-width: 750px )
     .dezign
@@ -49,6 +60,8 @@
         &__text
             margin-left: 0
             margin-bottom: 8rem
+    .section
+        padding: 2rem 0
            
     .section-title
         &__heading
@@ -67,6 +80,11 @@
     .card
         &__list
             margin-bottom: 1rem
+    .swiper
+        &-button
+            &-prev, &-next
+                width: 15%
+                margin-top: 0.2rem
 
             
     
