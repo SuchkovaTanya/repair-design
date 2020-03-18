@@ -1,3 +1,39 @@
+.prijects
+    &-title
+        text-align: center
+        
+       
+        &__heading
+            text-transform: uppercase
+            font-family: 'Yeseva One', cursive
+            font-size: 1.1rem
+            margin-top: 0
+            &--primary
+                color: $primary
+                text-align: left
+                font-size: 2.25rem
+                line-height: 3rem
+.prijects
+    &-title
+        &__text
+            /*font-family: "FuturaBookC", cursive*/
+            text-transform: none
+            width: 70%
+            &--light
+                color: $light
+                text-align: left
+                font-size: 1.286rem
+                line-height: 2.1rem
+        &__word
+            display: flex
+            align-items: center
+            &::after
+                content: ' '
+                width: 90px
+                height: 2px
+                border-radius: 1px
+                background-color: $primary
+                margin-left: 2rem
 .swiper
     &-slide
         display: flex
@@ -38,8 +74,10 @@
         &-prev
             margin-left: -0.8rem
             background: url('../img/Group (1).svg') no-repeat center
+            
         &-next
             background: url('../img/arrow-next.svg') no-repeat center
+            
 .swiper-container-horizontal>.swiper-pagination-bullets
     width: auto
     bottom: 1.2rem

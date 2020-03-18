@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Futura Demi';
-  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
+  src: url("fonts/futura/FuturaDemiC.woff") format("woff"), url("fonts/futura/FuturaDemiC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
 
 @font-face {
   font-family: 'Futura Book';
-  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
+  src: url("fonts/futura/FuturaBookC.woff") format("woff"), url("fonts/futura/FuturaBookC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
@@ -394,6 +394,9 @@ template {
 .col-50 {
   width: 50%; }
 
+.col-70 {
+  width: 70%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -420,8 +423,8 @@ img {
     font-size: 1.1rem; }
     .section-title__text {
       display: block;
-      font-family: 'FuturaBookC', cursive;
       margin-left: none;
+      font-family: 'FuturaBookC', cursive;
       font-size: 1.29rem;
       line-height: 2.07rem;
       max-width: 33rem;
@@ -446,6 +449,15 @@ img {
         text-align: left;
         font-size: 1.93rem;
         line-height: 2.64rem; }
+        .section-title__heading--primary-step {
+          margin-bottom: 3rem; }
+      .section-title__heading--light {
+        color: #ffffff;
+        text-align: left;
+        font-size: 1.286rem;
+        line-height: 1.786rem; }
+    .section-title__plese {
+      display: flex; }
     .section-title__word {
       display: flex;
       align-items: center; }
@@ -603,6 +615,40 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.prijects-title {
+  text-align: center; }
+  .prijects-title__heading {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.1rem;
+    margin-top: 0; }
+    .prijects-title__heading--primary {
+      color: #E3B873;
+      text-align: left;
+      font-size: 2.25rem;
+      line-height: 3rem; }
+
+.prijects-title__text {
+  /*font-family: "FuturaBookC", cursive*/
+  text-transform: none;
+  width: 70%; }
+  .prijects-title__text--light {
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.286rem;
+    line-height: 2.1rem; }
+
+.prijects-title__word {
+  display: flex;
+  align-items: center; }
+  .prijects-title__word::after {
+    content: ' ';
+    width: 90px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #E3B873;
+    margin-left: 2rem; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
@@ -710,15 +756,6 @@ img {
   background-size: 100%;
   margin-top: 300px; }
 
-.steps__fon {
-  display: flex;
-  z-index: 100;
-  width: 100%;
-  height: 1000px;
-  background: #131313 url("../img/bg-lines.svg") center;
-  background-size: 100%;
-  margin-top: -500px; }
-
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -794,13 +831,16 @@ img {
     width: 10%;
     margin-top: 0.2rem; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 994px) {
   .nav {
     display: none; }
   .hero__instagram {
     display: none; }
   .hero::after {
-    display: none; } }
+    display: none; }
+  .swiper-button-prev, .swiper-button-next {
+    width: 17%;
+    margin-top: 0.7rem; } }
 
 @media screen and (max-width: 750px) {
   .dezign__fon {
@@ -833,7 +873,9 @@ img {
     margin-bottom: 1rem; }
   .swiper-button-prev, .swiper-button-next {
     width: 15%;
-    margin-top: 0.2rem; } }
+    margin-top: 0.2rem; }
+  .col-50 {
+    width: 80%; } }
 
 @media screen and (max-width: 610px) {
   .contacts__button {
@@ -862,10 +904,23 @@ img {
   .hero__scroll-down {
     display: none; } }
 
+@media screen and (max-width: 409px) {
+  .swiper-button-prev, .swiper-button-next {
+    width: 17%;
+    margin-top: 0.2rem; } }
+
 @media screen and (max-width: 350px) {
   .contacts__phone {
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  .swiper-button-prev, .swiper-button-next {
+    width: 18%;
+    margin-top: 0.4rem; } }
 
 @media screen and (max-width: 360px) {
   .hero__content {
     margin-left: 2rem; } }
+
+@media screen and (max-width: 320px) {
+  .swiper-button-prev, .swiper-button-next {
+    width: 20%;
+    margin-top: 0.4rem; } }
