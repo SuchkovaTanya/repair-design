@@ -443,7 +443,9 @@ img {
       line-height: 2.25rem; }
       .section-title__heading--primary {
         color: #E3B873;
-        text-align: left; }
+        text-align: left;
+        font-size: 1.93rem;
+        line-height: 2.64rem; }
     .section-title__word {
       display: flex;
       align-items: center; }
