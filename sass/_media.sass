@@ -1,13 +1,16 @@
 @media screen and ( max-width: 1650px )
     .container
         width: 88%
+    .nav
+        &__item
+            margin-right: 3rem
     
 @media screen and ( max-width: 1500px )
     html
         font-size: 12px
     .nav
         &__item
-            margin-right: 1rem
+            margin-right: 2rem
     .hero
         &__button
             font-size: 1.2rem
@@ -90,13 +93,21 @@
             &-prev, &-next
                 width: 15%
                 margin-top: 0.2rem
+        &-slide
+            &__text
+                flex-basis: 48%
     .col
         &-50
-            width: 80%
+            width: 90%
+    .hero
+        &__scroll-down
+            display: none
 
             
     
 @media screen and ( max-width: 610px )
+    html
+        font-size: 8px
     .contacts
         &__button
             display: none
@@ -107,6 +118,8 @@
     .title
         font-size: 1.64rem
     .hero
+        background: $dark url('../img/hero-bg.jpg') no-repeat center
+        width: 100%
         &__instagram
             display: none
         &__text
@@ -120,16 +133,30 @@
             margin-bottom: 1.85rem
         &__scroll-down
             display: none
+    .prijects
+        &-title
+            &__word
+                &::after
+                    display: none
 @media screen and ( max-height: 530px )
     .hero
         &__scroll-down
             display: none
+        &__content
+        max-width: 90%
+    
 @media screen and ( max-width: 409px )
     .swiper
         &-button
             &-prev, &-next
                 width: 17%
                 margin-top: 0.2rem
+    
+@media screen and ( max-width: 375px )
+    .col
+        &-50
+            width: 95%
+     
 
     
 @media screen and ( max-width: 350px )
