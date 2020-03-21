@@ -350,16 +350,26 @@ template {
   font-size: 1.285rem;
   color: #ffffff;
   padding: 0.5rem 0; }
-  .input::-webkit-input-placeholder {
+  .input--light::-webkit-input-placeholder {
     color: #ffffff; }
-  .input::-moz-placeholder {
+  .input--light::-moz-placeholder {
     color: #ffffff; }
-  .input:-ms-input-placeholder {
+  .input--light:-ms-input-placeholder {
     color: #ffffff; }
-  .input::-ms-input-placeholder {
+  .input--light::-ms-input-placeholder {
     color: #ffffff; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #ffffff; }
+  .input--green::-webkit-input-placeholder {
+    color: #363636; }
+  .input--green::-moz-placeholder {
+    color: #363636; }
+  .input--green:-ms-input-placeholder {
+    color: #363636; }
+  .input--green::-ms-input-placeholder {
+    color: #363636; }
+  .input--green::placeholder {
+    color: #363636; }
 
 .policy__checkbox {
   opacity: 0;
@@ -436,6 +446,7 @@ img {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 2.5rem;
         color: #363636;
         font-size: 1.3rem;
         line-height: 2rem;
@@ -444,6 +455,8 @@ img {
         color: #ffffff; }
     .section-title__heading {
       line-height: 2.25rem; }
+      .section-title__heading--control {
+        color: #ffffff; }
       .section-title__heading--primary {
         color: #E3B873;
         text-align: left;
@@ -456,6 +469,8 @@ img {
         text-align: left;
         font-size: 1.286rem;
         line-height: 1.786rem; }
+      .section-title__heading--dezign {
+        color: #131313; }
     .section-title__plese {
       display: flex; }
     .section-title__word {
@@ -618,18 +633,21 @@ img {
   .title--primary {
     color: #E3B873; }
 
-.prijects-title {
-  text-align: center; }
-  .prijects-title__heading {
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive;
-    font-size: 1.1rem;
-    margin-top: 0; }
-    .prijects-title__heading--primary {
-      color: #E3B873;
-      text-align: left;
-      font-size: 2.25rem;
-      line-height: 3rem; }
+.prijects {
+  padding-bottom: 30rem;
+  padding-top: 10rem; }
+  .prijects-title {
+    text-align: center; }
+    .prijects-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      font-size: 1.1rem;
+      margin-top: 0; }
+      .prijects-title__heading--primary {
+        color: #E3B873;
+        text-align: left;
+        font-size: 2.25rem;
+        line-height: 3rem; }
 
 .prijects-title__text {
   /*font-family: "FuturaBookC", cursive*/
@@ -696,19 +714,77 @@ img {
   bottom: 1.2rem; }
 
 .control {
-  min-height: 100vh;
   width: 100%;
-  /*display: table*/
-  /*background: url("../video/ocean.jpg")*/ }
+  margin-bottom: 30rem; }
+  .control__video {
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-bottom: 4.428rem;
+    max-width: 58.357rem;
+    min-height: 31rem;
+    background: #131313 url("../img/video-control.jpg") center no-repeat;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+    .control__video::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(19, 19, 19, 0.8); }
+  .control__text {
+    max-width: 40.785rem;
+    margin: auto;
+    margin-bottom: 4.285rem;
+    text-align: center;
+    font-size: 1.428rem;
+    line-height: 2.4rem; }
+    .control__text::before {
+      content: '';
+      display: block;
+      width: 55px;
+      height: 2px;
+      margin: auto;
+      margin-bottom: 2.5rem;
+      background-color: #E3B873;
+      border-radius: 30px; }
+  .control__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 55rem;
+    margin: auto; }
+  .control__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%; }
+  .control__policy {
+    flex-basis: 100%;
+    margin: auto;
+    margin-top: 1.2rem; }
+    .control__policy__label {
+      justify-content: center; }
+  .control__label {
+    margin-bottom: 7px; }
+  .control__button {
+    padding: 1.2857rem 4.7857rem; }
 
-.section-title__control {
-  /* display: table-cell*/
-  /*vertical-align: middle*/
-  color: #131313;
-  text-align: center; }
+.video-play {
+  position: relative;
+  margin: auto; }
+
+.section-title {
+  margin-top: -30rem;
+  color: #ffffff; }
+  .section-title__image {
+    padding-bottom: 1rem; }
+  .section-title__control {
+    /* display: table-cell*/
+    /*vertical-align: middle*/
+    text-align: center; }
 
 .types__section-title {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  color: #131313; }
 
 .card__image {
   position: relative;
@@ -757,7 +833,13 @@ img {
   height: 100vh;
   background: #131313 url("../img/bg-lines.svg") center;
   background-size: 100%;
-  margin-top: 300px; }
+  margin-top: 400px; }
+
+.dezign__section-title {
+  margin-top: 3rem; }
+
+.steps__container {
+  margin-bottom: -30rem; }
 
 .modal {
   opacity: 0;
@@ -810,6 +892,9 @@ img {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-items: flex-end; }
+
+.label__green {
+  color: rgba(54, 54, 54, 0.5); }
 
 @media screen and (max-width: 1650px) {
   .container {
