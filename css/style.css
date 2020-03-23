@@ -926,6 +926,27 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem; }
+  .footer__map {
+    min-height: 33.21rem;
+    margin: 2rem 0; }
+  .footer__text {
+    width: 42.071rem;
+    font-size: 1.428rem;
+    color: #E3B873;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto; }
+  .footer__icon {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center; }
+    .footer__icon__mail {
+      margin-right: 1.5rem; }
 
 .modal {
   opacity: 0;
@@ -1175,6 +1196,10 @@ img {
       padding: 2.4rem 16rem; }
       .footer__button--primary {
         font-size: 1.6rem; }
+    .footer__map {
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto; }
   .clients {
     display: none; } }
 
