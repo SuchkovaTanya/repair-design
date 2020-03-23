@@ -800,6 +800,8 @@ img {
     margin-bottom: 7px; }
   .control__button {
     padding: 1.2857rem 4.7857rem; }
+  .control__input {
+    color: #131313; }
 
 .video-play {
   position: relative;
@@ -1035,8 +1037,8 @@ img {
   .card__text {
     margin-left: 0;
     margin-bottom: 8rem; }
-  .section {
-    padding: 2rem 0; }
+  /*.section
+        padding: 2rem 0*/
   .section-title__heading--dezign {
     position: relative;
     color: #ffffff; }
@@ -1143,16 +1145,42 @@ img {
     width: 95%; }
   .footer {
     background: #131313; }
+    .footer__container {
+      width: 100%; }
     .footer__menu {
       display: none; }
     .footer-wrap {
-      width: 100%; }
+      width: 100%;
+      padding: 1.5rem; }
+    .footer__title {
+      font-size: 2.6rem;
+      margin-bottom: 6.3rem; }
     .footer__input-group {
-      flex-basis: 100%; }
-    .footer__policy {
-      left: 0; }
+      flex-basis: 100%;
+      margin-bottom: 9rem; }
+      .footer__input-group--full-width {
+        margin-bottom: 1.4rem; }
+    .footer__policy__label {
+      font-size: 1.6rem;
+      line-height: 2.8rem; }
+    .footer .policy__label--center {
+      justify-content: left; }
+    .footer__form__label {
+      font-size: 1.48rem; }
+    .footer__input {
+      font-size: 1.8rem;
+      line-height: 1.4rem; }
     .footer__button {
-      padding: 1.55rem 12rem; } }
+      margin-top: 8.1rem;
+      padding: 2.4rem 16rem; }
+      .footer__button--primary {
+        font-size: 1.6rem; }
+  .clients {
+    display: none; } }
+
+@media screen and (max-width: 360px) {
+  .hero__content {
+    margin-left: 2rem; } }
 
 @media screen and (max-width: 350px) {
   .contacts__phone {
@@ -1160,10 +1188,6 @@ img {
   .swiper-button-prev, .swiper-button-next {
     width: 18%;
     margin-top: 0.4rem; } }
-
-@media screen and (max-width: 360px) {
-  .hero__content {
-    margin-left: 2rem; } }
 
 @media screen and (max-width: 320px) {
   .swiper-button-prev, .swiper-button-next {

@@ -46,7 +46,7 @@ $(document).ready(function() {
     //Активация анимации с применением скролинга
     new WOW().init();
 
-    //Валидация формы
+    //Валидация формы modal
     $('.modal__form').validate({
         errorClass: "invalid",
         rules: {
@@ -57,7 +57,7 @@ $(document).ready(function() {
               maxlength: 15
             },
           userPhone: "required",
-          // compound rule
+         // compound rule
           userEmail: {
             required: true,
             email: true
@@ -75,6 +75,64 @@ $(document).ready(function() {
               required: "Заполните поле",
               email: "Введите корректный email"
             }
+          }
+      });
+
+    //Валидация формы footer
+    $('.footer__form').validate({
+        errorClass: "invalid",
+        rules: {
+          // simple rule, converted to {required:true}
+          userName: {
+              required: true,
+              minlength: 2,
+              maxlength: 15
+            },
+          userPhone: "required",
+          userQuestion: "required",
+          // compound rule
+          userEmail: {
+            required: true,
+            email: true
+          }
+        },
+        //Настройка сообщений об ошибках
+        messages: {
+            userName: {
+                required: "Заполните поле",
+                minlength: "Имя должно быть не менее 2 символов",
+                maxlength: "Имя не должно быть больше 15 символов"
+            },
+            userPhone: "Заполните поле",
+            userQuestion: "Заполните поле",
+            userEmail: {
+              required: "Заполните поле",
+              email: "Введите корректный email"
+            }
+          }
+      });
+    //Валидация формы control
+    $('.control__form').validate({
+        errorClass: "invalid",
+        rules: {
+          // simple rule, converted to {required:true}
+          userName: {
+              required: true,
+              minlength: 2,
+              maxlength: 15
+            },
+          userPhone: "required",
+          
+        },
+        //Настройка сообщений об ошибках
+        messages: {
+            userName: {
+                required: "Заполните поле",
+                minlength: "Имя должно быть не менее 2 символов",
+                maxlength: "Имя не должно быть больше 15 символов"
+            },
+            userPhone: "Заполните поле",
+            
           }
       });
 //Маска ввода телефона

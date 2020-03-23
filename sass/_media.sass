@@ -56,6 +56,7 @@
             background-size: 100%
             margin-top: -10px
     
+    
     .row
         flex-direction: column
         align-items: center
@@ -68,8 +69,8 @@
         &__text
             margin-left: 0
             margin-bottom: 8rem
-    .section
-        padding: 2rem 0
+    /*.section
+        padding: 2rem 0*/
            
     .section-title
         &__heading
@@ -102,6 +103,7 @@
     .hero
         &__scroll-down
             display: none
+    
 
             
     
@@ -207,25 +209,56 @@
             text-align: center
     
 @media screen and ( max-width: 375px )
+    
     .col
         &-50
             width: 95%
     .footer
         background: $dark 
+        &__container
+            width: 100%
         &__menu
             display: none
         &-wrap
             width: 100%
+            padding: 1.5rem
+        &__title
+            font-size: 2.6rem
+            margin-bottom: 6.3rem
         &__input-group
             flex-basis: 100%
+            margin-bottom: 9rem
+            &--full-width
+                margin-bottom: 1.4rem
         &__policy
-            left: 0
-             
+            &__label
+                font-size: 1.6rem
+                line-height: 2.8rem
+        .policy
+            &__label
+                &--center
+                    justify-content: left
+            
+        &__form__label
+            font-size: 1.48rem
+        &__input
+            font-size: 1.8rem
+            line-height: 1.4rem
+                   
         &__button
-            padding: 1.55rem 12rem
+            margin-top: 8.1rem
+            
+            padding: 2.4rem 16rem
+            &--primary
+                font-size: 1.6rem
+    .clients
+        display: none
     
         
-     
+@media screen and ( max-width: 360px )
+    .hero
+        &__content
+            margin-left: 2rem  
 
     
 @media screen and ( max-width: 350px )
@@ -237,10 +270,7 @@
             &-prev, &-next
                 width: 18%
                 margin-top: 0.4rem
-@media screen and ( max-width: 360px )
-    .hero
-        &__content
-            margin-left: 2rem
+
 @media screen and ( max-width: 320px )
     .swiper
         &-button
