@@ -379,7 +379,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -387,6 +388,14 @@ template {
     border: 1px solid #E3B873;
     border-radius: 1px;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
+
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
 
 .container {
   width: 97%;
@@ -431,6 +440,8 @@ img {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
     font-size: 1.1rem; }
+    .section-title--steps {
+      margin-top: 6rem; }
     .section-title__text {
       display: block;
       margin-left: none;
@@ -462,14 +473,14 @@ img {
         text-align: left;
         font-size: 1.93rem;
         line-height: 2.64rem; }
-        .section-title__heading--primary-step {
-          margin-bottom: 3rem; }
       .section-title__heading--light {
         color: #ffffff;
         text-align: left;
         font-size: 1.286rem;
         line-height: 1.786rem; }
       .section-title__heading--dezign {
+        color: #131313; }
+      .section-title__heading--clients {
         color: #131313; }
     .section-title__plese {
       display: flex; }
@@ -534,8 +545,8 @@ img {
   color: #E3B873;
   text-transform: uppercase;
   font-size: 1.1rem;
-  -webkit-animation: colorChenge 5s liner 0s infinite;
-  animation: colorChenge 5s liner 0s infinite; }
+  -webkit-animation: colorChenge 5s linear 0s infinite;
+  animation: colorChenge 5s linear 0s infinite; }
 
 .nav__item {
   text-decoration: none;
@@ -795,11 +806,11 @@ img {
   margin: auto; }
 
 .section-title {
-  margin-top: -30rem;
   color: #ffffff; }
   .section-title__image {
     padding-bottom: 1rem; }
   .section-title__control {
+    margin-top: -30rem;
     text-align: center; }
 
 .types__section-title {
@@ -857,9 +868,62 @@ img {
 
 .dezign__section-title {
   margin-top: 3rem; }
+  .dezign__section-title__text {
+    text-align: center; }
 
-.steps__container {
-  margin-bottom: -30rem; }
+.steps {
+  width: 100%; }
+
+.clients {
+  padding-bottom: 30rem; }
+
+.footer {
+  background: #131313 url("../img/footer-bg.png"); }
+  .footer-wrap {
+    background-color: #181818;
+    max-width: 74rem;
+    margin: auto;
+    margin-top: -23.1rem;
+    margin-bottom: 3.714rem;
+    padding: 2.5rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0.6rem; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0.8rem;
+    max-width: 43.142rem;
+    margin: auto; }
+  .footer__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    margin-right: 1.5rem;
+    justify-content: space-around;
+    margin-bottom: 4.5rem; }
+    .footer__input-group--full-width {
+      flex-basis: 100%;
+      margin-bottom: 2.6rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 4.1rem;
+    color: #ffffff; }
+  .footer__button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.55rem 4.6rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem; }
 
 .modal {
   opacity: 0;
@@ -904,10 +968,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
@@ -1074,7 +1140,19 @@ img {
 
 @media screen and (max-width: 375px) {
   .col-50 {
-    width: 95%; } }
+    width: 95%; }
+  .footer {
+    background: #131313; }
+    .footer__menu {
+      display: none; }
+    .footer-wrap {
+      width: 100%; }
+    .footer__input-group {
+      flex-basis: 100%; }
+    .footer__policy {
+      left: 0; }
+    .footer__button {
+      padding: 1.55rem 12rem; } }
 
 @media screen and (max-width: 350px) {
   .contacts__phone {
