@@ -927,8 +927,11 @@ img {
     background-color: #131313;
     padding: 4.285rem; }
   .footer__map {
+    margin-left: auto;
+    margin-right: auto;
     min-height: 33.21rem;
-    margin: 2rem 0; }
+    width: 66.071rem;
+    margin-top: 2rem; }
   .footer__text {
     width: 42.071rem;
     font-size: 1.428rem;
