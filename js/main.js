@@ -19,13 +19,23 @@
 $(document).ready(function() {
     var modal=$('.modal'),
         modalBtn=$('[data-toggle=modal]'),
-        closeBtn=$('.modal__close');
+        closeBtn=$('.modal__close'),
+        thenks=$('.thenks'),
+        thenksOpen=$('[data-toggle=thenks]'),
+        thenksClose=$('.thenks__close');
     modalBtn.on('click', function(){
         modal.toggleClass('modal--visible');
+        thenks.toggleClass('thenks--visible');
     });
     closeBtn.on('click', function(){
         modal.toggleClass('modal--visible');
     });
+    thenksOpen.on('click', function(){
+      thenks.toggleClass('thenks--visible');
+    });
+    thenksClose.on('click', function(){
+      thenks.toggleClass('thenks--visible');
+  });
     //Настройки слайдера
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
@@ -75,7 +85,22 @@ $(document).ready(function() {
               required: "Заполните поле",
               email: "Введите корректный email"
             }
-          }
+          },
+        // настройка отправки формы с ajax
+        submitHandler: function(form){
+          $.ajax({
+            type: "POST",
+            url: "send.php",
+            data: $(form).serialize(),
+            success: function (response) {
+              
+              $(form)[0].reset();
+              modal.toggleClass('modal--visible');
+              thenks.toggleClass('thenks--visible');
+              
+            }
+          });
+        }
       });
 
     //Валидация формы footer

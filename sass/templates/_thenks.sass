@@ -1,8 +1,8 @@
-.modal
+.thenks
     opacity: 0
     visibility: hidden
     position: fixed
-    z-index: 199
+    z-index: 200
     left: 0
     top: 0
     bottom: 0
@@ -16,20 +16,14 @@
     &--visible
         opacity: 1
         visibility: visible
-    
-    
+        
     &__dialog
         position: relative
-        max-width: 36.36rem
-        background: $dark url('../img/bg-lines.svg') no-repeat center
+        
+        background-color:  $dark 
         padding: 2.36rem 3.5rem 1.93rem
-        color: $light
-    &__thenks
-        position: relative
-        max-width: 20rem
-        background: $dark
-        padding: 3rem 3.5rem
         color: $primary
+           
 
     &__close
         position: absolute
@@ -48,26 +42,7 @@
         text-align: center
         margin: 0
         margin-bottom: 2.428rem
-        &--thenks
-            color: $primary
-            font-size: 1.5rem
-    &__form
-        display: flex
-        flex-direction: column
-    &__input
-        &-group
-            display: flex
-            flex-direction: column
-            margin-bottom: 3.428rem
-        &:last-of-type
-            margin-bottom: 1rem
-    &__policy
-        margin-bottom: 2.7rem
-    &__button
-        align-items: flex-end
-.label
-    &__green
-        color: rgba(54, 54, 54, 0.5)
-   
+        
+       
 
         
